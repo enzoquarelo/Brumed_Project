@@ -1,0 +1,112 @@
+/* Fonts Imports */
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+
+/* Informations Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-grid {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+:root {
+    --green: #25463C;
+    --white: #f7f7f7;
+    --ligthGreen: #2B876B;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -Header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+header {
+    width: 100%;
+    background-color: var(--green);
+}
+
+.header{
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_header{
+    width: 460px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_header a{
+    font-family: Montserrat;
+    color: var(--white);
+
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+.navbar_header a:hover{
+    border-bottom: 1px solid var(--white);
+}
+
+.navbar_midia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: row;
+
+    width: 320px;
+}
+
+.navbar_midia .mail{
+    display: flex;
+    align-items: center;
+}
+
+#mail{
+    width: 22px;
+    height: 19px;
+
+    margin-right: 10px;
+}
+
+.navbar_midia img{
+    width: 21px;
+    height: 20px;
+}
+
+.navbar_midia a{
+    font-family: Montserrat;
+    color: var(--white);
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -Home - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.banner_home{
+    background-image: url("../assets/images/banner_image.png");
+
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+
+    width: 100%;
+    height: 500px;
+}
